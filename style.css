@@ -41,16 +41,16 @@ section {
 }
 
 #home .profile-image {
-    width: 300px;
+    width: 80%;
     border-radius: 15px;
 }
 
 #about .about-image{
-    height: 300px;
+    height: 60%;
     width: 70em;
 }
 #skills .skills-image{
-    width: 300px;
+    width: 80%;
 }
 
 .fa-brands {
