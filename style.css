@@ -55,6 +55,13 @@ section {
     width: 20%;
 }
 
+#skills .container {
+  color: white;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .fa-brands {
     padding: 20px;
     font-size: 30px;
