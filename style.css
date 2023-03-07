@@ -40,6 +40,13 @@ section {
     text-align: center;
 }
 
+.page-container {
+width: auto;
+display: grid;
+grid-template-columns: 1fr;
+margin: 0 auto ;
+}
+
 #home .profile-image {
     width: 35%;
     border-radius: 15px;
