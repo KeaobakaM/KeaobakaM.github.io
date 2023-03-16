@@ -33,7 +33,7 @@ header li {
 }
 
 section {
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,7 +166,8 @@ li{
     color: white;
 }
 
-@media (max-width:750px){
+@media (max-width: 480px){
+
   .page-container{
     width: 95%;
     grid-template-columns: 1fr;
