@@ -169,7 +169,7 @@ li{
 @media (max-width: 480px){
 
   .page-container{
-    width: 95%;
+    width: 90%;
     grid-template-columns: 1fr;
   }
 }
