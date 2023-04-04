@@ -196,7 +196,7 @@ li{
     color: white;
 }
 
-@media (max-width: 800px){
+ @media screen and (max-device-width: 750px){
 
   .page-container{
     width: 90%;
