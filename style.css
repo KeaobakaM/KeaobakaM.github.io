@@ -17,6 +17,27 @@ header {
     background-color: rgb(0, 0, 0); 
 }
 
+#menu-bar{
+  display: none;
+}
+
+header label {
+font-size: 20px;
+float: right;
+color:antiquewhite;
+cursor: pointer;
+display: none;
+}
+
+.checkbtn {
+  font-size: 20px;
+  color: white;
+  float: left;
+  line-height: 20px;
+  margin-left: 20px;
+  display: none;
+}
+
 header *{
     display: inline;
     height: 50px;
@@ -175,10 +196,54 @@ li{
     color: white;
 }
 
-@media (max-width: 480px){
+@media (max-width: 800px){
 
   .page-container{
     width: 90%;
     grid-template-columns: 1fr;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%; left:0; right:0;
+    display: none;
+    left: 0%;
+    right: 0%;
+  }
+  header .navbar ul {
+    display: block;
+  }
+  header .navbar ul li {
+    width: 100%;
+    display: block;
+    background: rgb(59, 59, 59);
+    margin-left: 0px;
+  }
+
+  header .navbar ul li a {
+    font-size: 20px;
+    left: 20px;
+  }
+
+  header .navbar ul li:hover{
+    background: grey;
+  }
+
+  header label {
+    display: initial;
+  }
+  
+  .checkbtn{
+    display: block;
+  }
+  
+  
+  a:hover, a.active {
+    background: none;
+    color: red;
+  }
+
+  #menu-bar:checked ~ .navbar{
+    display: initial;
   }
 }
