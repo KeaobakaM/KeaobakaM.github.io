@@ -6,6 +6,7 @@ const screenSize = window.matchMedia("screen and (max-device-width: 750px)");
 
 screenSize.addEventListener("change", e => {
    if(e.matches){
+      navbar.style.display = 'none';
 menu.addEventListener('click', () => {
    navbar.style.display = 'initial';
 })
@@ -15,7 +16,6 @@ navLinks.forEach(link => {
     navbar.style.display = 'initial';
     document.querySelector('.active')?.classList.remove('active');
     link.classList.add('active');
-    link.classList.remove('active');
     if(navbar.style.display = 'initial'){
       navbar.style.display = 'none';
     }
