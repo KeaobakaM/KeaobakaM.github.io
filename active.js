@@ -13,8 +13,17 @@ if(bigScreen.matches === true){
       link.classList.add("active");
       navbar.style.display = "initial";
    })
+    });  
+}
+
+if(screenSize.matches === true){
+   navbar.style.display = "none";
+   navLinks.forEach((link) => {
+   link.addEventListener("click", () => {
+      document.querySelector('.active')?.classList.remove('active');
+      link.classList.add("active");
+   })
     });
-    
 }
 
     menu.addEventListener("click", () => {
