@@ -12,7 +12,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    height: 50px;
+    height: 80px;
     line-height: 50px;
     background-color: rgb(0, 0, 0); 
 }
@@ -40,7 +40,7 @@ display: none;
 
 header *{
     display: inline;
-    height: 50px;
+    height: 80px;
 }
 
 header ul {
@@ -58,6 +58,11 @@ header li {
 }
 
 .active {
+  color: red;
+}
+
+a:hover, a.active {
+  background: none;
   color: red;
 }
 
@@ -213,6 +218,7 @@ li{
     display: none;
     left: 0%;
     right: 0%;
+    height: 80px;
   }
   header .navbar ul {
     display: block;
