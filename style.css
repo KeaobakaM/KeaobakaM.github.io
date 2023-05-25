@@ -73,6 +73,7 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 20px;
 }
 
 .page-container {
@@ -255,7 +256,7 @@ li{
     color: red;
   }
 
-  #menu-bar:checked ~ .navbar{
+  /* #menu-bar:checked ~ .navbar{
     display: initial;
-  }
+  } */
 }
