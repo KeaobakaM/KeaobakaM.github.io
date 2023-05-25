@@ -27,7 +27,9 @@ if(screenSize.matches === true){
 }
 
     menu.addEventListener("click", () => {
-      navbar.style.display = "initial";
+      if(navbar.style.display === "none"){
+        navbar.style.display = "initial"
+      } else navbar.style.display = "none";
     });
 
     navLinks.forEach((link) => {
@@ -44,8 +46,11 @@ if(screenSize.matches === true){
 screenSize.addEventListener("change", (e) => {
   if (e.matches) {
     navbar.style.display = "none";
+
     menu.addEventListener("click", () => {
-      navbar.style.display = "initial";
+      if(navbar.style.display === "none"){
+        navbar.style.display = "initial"
+      } else navbar.style.display = "none";
     });
 
     navLinks.forEach((link) => {
@@ -59,6 +64,11 @@ screenSize.addEventListener("change", (e) => {
       });
     });
   } else {
+    menu.addEventListener("click", () => {
+      if(navbar.style.display === "none"){
+        navbar.style.display = "initial"
+      } else navbar.style.display = "none";
+    });
     navbar.style.display = "initial";
     navLinks.forEach((link) => {
       link.addEventListener("click", () => {
@@ -71,6 +81,11 @@ screenSize.addEventListener("change", (e) => {
 
 bigScreen.addEventListener("change", (e) => {
   if (e.matches) {
+    menu.addEventListener("click", () => {
+      if(navbar.style.display === "none"){
+        navbar.style.display = "initial"
+      } else navbar.style.display = "none";
+    });
     navbar.style.display = "initial";
     navLinks.forEach((link) => {
       link.addEventListener("click", () => {
