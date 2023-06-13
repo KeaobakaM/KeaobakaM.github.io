@@ -14,6 +14,11 @@ if(bigScreen.matches === true){
       navbar.style.display = "initial";
    })
     });  
+    menu.addEventListener("click", () => {
+      if(navbar.style.display === "none"){
+        navbar.style.display = "initial"
+      } else navbar.style.display = "none";
+    });
 }
 
 if(screenSize.matches === true){
@@ -37,7 +42,7 @@ if(screenSize.matches === true){
         navbar.style.display = "initial";
         document.querySelector('.active')?.classList.remove('active');
         link.classList.add("active");
-        if ((navbar.style.display = "initial") && (screenSize.matches)) {
+        if ((navbar.style.display = "initial") && (screenSize.matches) | (bigScreen.matches != true)) {
           navbar.style.display = "none";
         }
       });
@@ -90,6 +95,25 @@ bigScreen.addEventListener("change", (e) => {
     navLinks.forEach((link) => {
       link.addEventListener("click", () => {
         link.classList.add("active");
+      });
+    });
+  }
+  else {
+    console.log( 'money')
+    navbar.style.display = "none";
+    menu.addEventListener("click", () => {
+      if(navbar.style.display === "none"){
+        navbar.style.display = "initial"
+      } else navbar.style.display = "none";
+    });
+
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        document.querySelector('.active')?.classList.remove('active');
+        link.classList.add("active");
+        if ((navbar.style.display === "initial")  && (screenSize.matches)) {
+          navbar.style.display = "none";
+        } 
       });
     });
   }
