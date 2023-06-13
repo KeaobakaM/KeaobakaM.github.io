@@ -260,3 +260,54 @@ li{
     display: initial;
   } */
 }
+
+ @media only screen and (max-width: 750px){
+
+  .page-container{
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%; left:0; right:0;
+    display: none;
+    left: 0%;
+    right: 0%;
+    height: 80px;
+  }
+  header .navbar ul {
+    display: block;
+  }
+  header .navbar ul li {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background: rgb(59, 59, 59);
+    margin-left: 0px;
+  }
+
+  header .navbar ul li a {
+    font-size: 40px;
+    left: 40px;
+    top: 15px;
+  }
+
+  header .navbar ul li:hover{
+    background: grey;
+  }
+
+  header label {
+    display: initial;
+  }
+  
+  .checkbtn{
+    display: block;
+  }
+  
+  
+  a:hover, a.active {
+    background: none;
+    color: red;
+  }
+}
