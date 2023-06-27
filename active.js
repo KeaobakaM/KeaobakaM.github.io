@@ -23,6 +23,11 @@ if(bigScreen.matches === true){
 
 if(screenSize.matches === true){
    navbar.style.display = "none";
+   menu.addEventListener("click", () => {
+    if(navbar.style.display === "none"){
+      navbar.style.display = "initial"
+    } else navbar.style.display = "none";
+  });
    navLinks.forEach((link) => {
    link.addEventListener("click", () => {
       document.querySelector('.active')?.classList.remove('active');
